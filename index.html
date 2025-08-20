@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -26,15 +25,15 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- banner section starts here -->
 
     <div
         class="parent-div flex flex-col md:flex-row justify-between min-h-[200px] max-w-[1280px] container mx-auto p-5">
         <!-- container mx-auto not work -->
-        <div class="left-div">
-            <h1 class="text-[32px] md:text-[80px] font-bold">It's good <br> tea time at The <br> Tea House</h1>
-            <p class="text-[18px] my-10">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your
+        <div class="md:w-1/2">
+            <h1 class="text-[32px] md:text-[80px] font-bold">It's good <br> tea time at <br> The Tea House</h1>
+            <p class="text-[18px] my-10">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
                 Taste Buds.
             </p>
             <div class="flex justify-center md:justify-start">
@@ -47,7 +46,7 @@
                 </button>
             </div>
         </div>
-        <div class="right-div md:relative">
+        <div class="md:w-1/2 md:relative">
             <img src="./images/banner.png" alt="" class="mt-[20px] md: mt-0 md:relative md:top-[120px]">
             <div
                 class="flex items-center w-[255px] h-[100px] rounded-lg shadow-lg md:absolute bg-white py-[20px] px-[25px]">
@@ -63,7 +62,7 @@
 
     <!-- featured section starts here -->
 
-    <section class="max-w-[1280px] container mx-auto md:mt-[100px] p-5">
+    <section class="max-w-[1280px] container mx-auto md:my-[100px] p-5">
         <h1 class="text-2xl md:text-5xl text-center font-bold">Our Featured Products</h1>
         <p class="md:text-center my-10">
             There are many variations of passages of Lorem Ipsum available, but the majority
@@ -200,6 +199,51 @@
         </div>
 
     </section>
+
+    <!-- footer section starts here -->
+
+    <section class="max-w-[1280px] mx-auto my-[100px]">
+        <div class="flex justify-between">
+            <img src="./images/cup.png" alt="">
+            <div class="flex items-center gap-[20px]">
+                <p>Ready to get strated?</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <div>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Our Service</h2>
+                <ul>
+                    <li><a href="#">Life Insurance</a></li>
+                    <li><a href="#">Car Insurance</a></li>
+                    <li><a href="#">Health Insurance</a></li>
+                    <li><a href="#">House Insurance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>
+                    Subscribe to our newsletter
+                </h2>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
